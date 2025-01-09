@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <main class="bg-white p-6 rounded-lg shadow-md max-w-md w-full">
+        <header class="text-4xl font-bold text-center pb-4">Mis Tareas</header>
+        <section>
+            <form id="formularioTareas" class="formulario">
+                <label class="block font-bold text-2xl text-" for="tarea">Tarea: </label>
+                <input
+                    class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mt-2"
+                    type="text" id="tarea" placeholder="Ingrese su Tarea a asginar" required>
+                <div class="flex justify-center ">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 mt-4 rounded" type="submit">Crear Tarea</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h1 class="text-center font-bold text-2xl mt-4">Tareas</h1>
+            <div class="flex flex-col justify-center items-center" id="lista">
+            </div>
+        </section>
+        
+    </main>
+    <script src="./js/tareas.js"></script>
+</body>
+
+</html>
